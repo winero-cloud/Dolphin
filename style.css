@@ -1,0 +1,145 @@
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Doppio one, Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Body styling */
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 150vh;
+    background: url(./Asset/Background.jpg);
+    background-size: cover;
+    background-position: center;
+} 
+
+/* Form container styles */
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 500px;
+    height: 600px;
+    border: 2px solid #9b9af3;
+    border-radius: 25px;
+    backdrop-filter: blur(3px);
+}
+
+/* Welcome header styles */
+
+h2{
+    color: #9b9af3;
+    margin: -10px 0 40px 0;
+    text-align: center;
+}
+
+/* All input style  */
+.input-group{
+    position: relative;
+    padding: 15px;
+    }
+
+/* Main input style  */
+.input-group input{
+    width: 400px;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 18px;
+    color: #9b9af3;
+    outline: none;
+    background: transparent;
+    border: 2px solid #9b9af3;
+    margin-left: 30px; 
+}
+
+/* Label input style */
+.input-group input:focus~label,
+.input-group input:valid~label{
+        background: rgb(47, 15, 77);
+        top:-8.5px}
+
+.input-group label{
+    position: absolute;
+    font-size: 18px;
+    color: #9b9af3;
+    top: 20%;
+    left: 70px; 
+    transform: translateY(50%);
+    pointer-events: none;
+    transition: .5s;;
+    }
+
+/* Remember - forget style */
+.remember-forget{
+    display: flex;
+    justify-content: space-between;
+    color: #9b9af3;
+    accent-color: #9b9af3;
+    padding: 0 40px; 
+    font-size: 18px;
+}
+
+/* Check box style */
+.remember-forget input{
+    width: 15px;
+    height: 15px;
+}
+
+/* Forget password link style */
+.remember-forget a, .signup-link a{
+    color: blue;
+    text-decoration: none;
+}
+
+.remember-forget a:hover, .signup-link a:hover{
+    text-decoration: underline;
+    color: #9b9af3
+}
+
+/* Enable biometric/button */
+.biometric{
+    text-align: center;
+    font-size: 18px;
+    color: #9b9af3;
+    padding: 15px 0;
+}
+
+/* Login button styles */
+button{
+    width: 350px;
+    height: 40px;
+    font-size: 18px;
+    margin:20px 70px 20px ;
+    background: #9b9af3;
+    border-radius: 15px;
+    color: blue;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover{
+    background: #6563dd;
+    color: #9b9af3;
+}
+
+/* Sign Up link styles */
+.signup-link{
+    text-align: center;
+    font-size: 18px;
+    color: #9b9af3;
+}
+
+/* Footer styles */
+
+footer{
+    color: #fff;
+    padding: 40px 0 5px 0;
+}
+
+    
